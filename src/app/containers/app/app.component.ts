@@ -5,7 +5,10 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
   template: `
     <div>
-      Hello Ultimate Angular!
+      <div class="wrapper">
+        Hello Ultimate Angular!
+        <router-outlet></router-outlet>
+      </div>
     </div>
   `
 })
