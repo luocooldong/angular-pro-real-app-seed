@@ -6,6 +6,7 @@ import { Store } from 'store';
 
 // feature modules
 import { AuthModule } from './../auth/auth.module';
+import { HealthModule } from './../health/health.module';
 
 
 // containers
@@ -22,7 +23,8 @@ export const ROUTES: Routes = [];
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
-    AuthModule
+    AuthModule,
+    HealthModule
   ],
   declarations: [
     AppComponent,
