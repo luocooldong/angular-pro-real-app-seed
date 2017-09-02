@@ -5,6 +5,10 @@ import { ScheduleModule } from './schedule/schedule.module';
 import { MealsModule } from './meals/meals.module';
 import { WorkoutsModule } from './workouts/workouts.module';
 
+// shared modules
+import { SharedModule } from './shared/shared.module';
+
+// guards
 import { AuthGuard } from './../auth/shared/guards/auth.guard';
 
 export const ROUTES: Routes = [
@@ -15,7 +19,8 @@ export const ROUTES: Routes = [
 
 @NgModule({
     imports: [
-        RouterModule.forChild(ROUTES)
+        RouterModule.forChild(ROUTES),
+        SharedModule.forRoot()
     ]
 })
 export class HealthModule {}
